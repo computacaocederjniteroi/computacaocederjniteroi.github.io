@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+	<div class="container">
+		<header>
+      <img src={{ "/assets/images/" | prepend: site.baseurl | append: "logo-cederj.jpg" }} alt="Logo cederj">
+      <h1>Computação - CEDERJ Niterói</h1>
+    </header>
+
+	  {% include sidebar.html %}
+
+	  <section>
+	  	{{ content }}
+	  </section>
+	</div>
+
+
+</body>
+</html>
